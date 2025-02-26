@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --header-bg: #2980b9;
+  --sidebar-bg: #2c3e50;
+  --sidebar-hover: #34495e;
+}
+
+@layer components {
+  .sidebar-link {
+    @apply flex items-center gap-2 px-4 py-2 text-gray-300 transition-colors;
+  }
+
+  .sidebar-link:hover {
+    @apply bg-[--sidebar-hover];
+  }
+
+  .sidebar-link.active {
+    @apply bg-[--sidebar-hover] text-white;
+  }
+}
+
